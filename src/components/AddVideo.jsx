@@ -20,8 +20,10 @@ const AddVideo = ({ addVideos, editableVideo, updateVideo }) => {
 
     if(editableVideo){
       updateVideo(video);
+      alert(`${video.title} updated sucessfully...✅`)
     }else{
       addVideos(video); // taking new video
+      alert(`${video.title} added successfully...✅`);
     }
     console.log(video);
     setVideo(initialState);
